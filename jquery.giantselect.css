@@ -1,0 +1,22 @@
+.giasel_selbox {
+	padding: 0px !important; margin: 0px !important; display: block; cursor:pointer; border: 1px solid #A3A3A3; height: 22px; border-radius: 3px;
+}
+.giasel_selbox .giasel_seltitle{
+	padding: 2px 7px; margin: 0px; display: block; border: none; height: 17px; width: 85%; float:left; font-size: 13px;
+}
+.giasel_selbox .giasel_selchoose{
+	padding: 1px 2px !important; margin: 1px !important; display: block; text-align:center;
+	border: 1px solid #bbbbbb; height: 16px; width: 20px; float: right; vertical-align:center; background-color: #dddddd;
+	font-size: 12px; border-radius: 3px;
+}
+
+.giasel_result { padding: 0px !important; position: absolute; margin: 23px 0 0 0;
+	border: 1px solid #cccccc; background-color: #EEEEEE; overflow-x: hidden; }
+.giasel_result input{
+	padding: 2px 4px !important; margin: 1px 4px; border: 1px solid #A3A3A3; background-color: #fafafa;border-radius: 3px;
+}
+
+.giasel_result ul {	width: 100%; list-style-position: outside; list-style: none; padding: 0; margin: 0; }
+
+.giasel_result li { margin: 1px 0px; padding: 3px 5px; cursor: pointer; display: block; width: 100%; font: menu; font-size: 12px; overflow: hidden; }
+.giasel_result li:hover { background-color: #fafafa; }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link type="text/css" href="jquery.giantselect.css" rel="stylesheet" />
+	<script src="jquery-1.9.1.min.js"></script>
+	<script src="jquery.giantselect.js"></script>
+	<script src="data.js"></script>
+</head>
+<body>
+<div style="width:400px; margin: 100px auto;">
+	<input id="txGiantSelectInput" type="text" /><br/>
+	<button id="changeInput">Build</button>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#txGiantSelectInput').giantselect({}, dtGiantSelect);
+	
+	var curObExists = true;
+	$('#changeInput').bind('click', function(){
+		if(curObExists){
+			$('#txGiantSelectInput').giantselect('destroy');
+			curObExists = false;
+		}else{
+			$('#txGiantSelectInput').giantselect({}, dtGiantSelect);
+			curObExists = true;
+		}
+	});
+});
+</script>
+</body>
+</html>
